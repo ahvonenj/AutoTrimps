@@ -17,6 +17,7 @@ var atscript = document.getElementById('AutoTrimps-script')
   , basepath = 'https://ahvonenj.github.io/AutoTrimps/'
   , modulepath = 'modules/'
   ;
+
 //This should redirect the script to wherever its being mirrored from.
 if (atscript !== null) {
     basepath = atscript.getAttribute('src').replace(/AutoTrimps2\.js$/, '');
@@ -26,6 +27,7 @@ document.head.appendChild(document.createElement('script')).src = basepath + mod
 
 function initializeAutoTrimps() {
     loadPageVariables();
+    document.head.appendChild(document.createElement('script')).src = basepath + modulepath + 'performance.js';
     document.head.appendChild(document.createElement('script')).src = basepath + 'SettingsGUI.js';
     document.head.appendChild(document.createElement('script')).src = basepath + 'Graphs.js';
     //Load modulepaths:
