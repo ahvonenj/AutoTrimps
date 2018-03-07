@@ -14,9 +14,10 @@ var ATversion = '2.1.6.4-genbtc-3-4-2018+Mod+Uni+coderpatsy';
 ////////////////////////////////////////////////////////////////////////////////
 ////////////////////////////////////////
 var atscript = document.getElementById('AutoTrimps-script')
-  , basepath = 'http://127.0.0.1:8887/'
+  , basepath = 'https://ahvonenj.github.io/AutoTrimps/'
   , modulepath = 'modules/'
   ;
+
 //This should redirect the script to wherever its being mirrored from.
 if (atscript !== null) {
     basepath = atscript.getAttribute('src').replace(/AutoTrimps2\.js$/, '');
@@ -50,11 +51,10 @@ function initializeAutoTrimps() {
 
 function printChangelog() {
     tooltip('confirm', null, 'update', '\
-<br><b class="AutoEggs">3/4 v2.1.6.4 </b><b style="background-color:#32CD32"> New:</B> Basic Analytics are now being collected. Read about it in the tooltip of the new button on the Import/Export tab . Overkill Graph fixed for Liquification.  Setting Max Explorers to infinity as they are not that useless anymore. Update battlecalc for Fluffy & Ice on Autostance2.\
-<br><b>3/1 v2.1.6.3 </b><b style="background-color:#32CD32"> New:</B> AutoPerks: Capable/Curious/Cunning, BaseDamageCalc: C2,StillRowing,Strength in Health,Ice,Fluffy,Magmamancer - Fix bugs in autoperks around capable/fluffy allocating looting + more bugs\
+<br>Swiffy Mcswiffster ocean liner extraordinaire\
 <br><u>Report any bugs/problems please!<br You can find me on Discord: <span style="background-color:#ddd;color:#222">genr8_#8163 </span>\
 <a href="https://discord.gg/0VbWe0dxB9kIfV2C"> @ AT Discord Channel</a></u>\
-<br><a href="https://github.com/genBTC/AutoTrimps/commits/gh-pages" target="#">Check the commit history</a> (if you want)\
+<br><a href="https://github.com/ahvonenji/AutoTrimps/commits/gh-pages" target="#">Check the commit history</a> (if you want)\
 ', 'cancelTooltip()', 'Script Update Notice<br>' + ATversion);
 }
 ////////////////////////////////////////
